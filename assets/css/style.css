@@ -153,9 +153,9 @@ h5{
 .modal-footer {
   justify-content: center;
 }
-#copyPwd,
-#generatePwd {
-  width: 45%;
+#copyPassword,
+#getPassword {
+  width: 44%;
   margin-left: 3px;
   font-size: 22px;
   padding: 5px 1px;
