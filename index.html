@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password Generator</title>
+    <!--bootstrap link-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <!--google fonts link-->
+    <link href="https://fonts.googleapis.com/css2?family=Katibeh&family=Rokkitt:wght@500&display=swap" rel="stylesheet">
+    <!---stylesheet link-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Password Generator</h1>
+        </header>
+        <div class="card">
+            <div class="card-header">
+                <h2>Generate a Password</h2>
+            </div>
+            <div class="card-body">
+                <textarea readonly id="password" placeholder="Your Secure Password"
+                    aria-label="Generated Password"></textarea>
+            </div>
+            <div class="card-footer">
+                <!-- Button to trigger modal -->
+                <button type="button" id="btn-show-modal" class="btn" data-toggle="modal"
+                    data-target="#exampleModal">Generate Password</button>
+            </div>
+        </div>
+        <!--Modal Starting-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div id="model-Container" class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-center" id="modalLabel">Select password generation criteria</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <input type="text" id="txt" class="shadow p-1 mb-2 bg-white rounded"></input>
+                        <div class="form-group">
+                            <p id="passwordLen">Select Password Length</p>
+                            <input type="range" class="form-control-range" id="selectRange" max="50" min="4" value="25">
+                            <p id="p1" style="text-align: center;">Value: <span id="demo"></span></p>
+                        </div>
+                        <!--checbox for special characters-->
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="specialChar" />
+                            <label class="form-check-label" for="specialChar">
+                                Include Special Characters
+                            </label>
+                        </div>
+                        <!--checkbox for uppercase letters -->
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="uppercase" />
+                            <label class="form-check-label" for="uppercase">
+                                Include Uppercase Letters
+                            </label>
+                        </div>
+                        <!--checkbox for lowercase letters-->
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="lowercase" />
+                            <label class="form-check-label" for="lowercase">
+                                Include Lowercase Letters
+                            </label>
+                        </div>
+                        <!--checkbox for numbers-->
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="number" />
+                            <label class="form-check-label" for="number">
+                                Include Numbers
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" id="generatePwd" class="btn btn-primary">Get a password</button>
+                        <button type="button" id="copyPwd" class="btn btn-primary " data-dismiss="modal"
+                            onclick="copyPassword()">Copy to clipboard</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
