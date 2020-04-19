@@ -16,9 +16,9 @@
 1. A Modal popup will be displayed when a user clicks on the ***Generate Password*** button.
 2. A user can select password length using a range slider.
 3. A user has been presented with a series of password criteria.
-4. An alert will be displayed when a user clicks on ***Get a password*** button without selecting any criteria.
-5. Once a user clicks on ***Get a password*** button then the password will be generated as per selected criteria
-6. Once a user clicks on ***Copy to clipboard*** button then the password will be copied and the modal popup will be closed.
+4. An alert will be displayed when a user clicks on the ***Get a password*** button without selecting any criteria.
+5. Once a user clicks on the ***Get a password*** button then the password will be generated as per selected criteria
+6. Once a user clicks on the ***Copy to clipboard*** button then the password will be copied and the modal popup will be closed.
 
     
 
