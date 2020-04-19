@@ -21,7 +21,7 @@ var numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 var specialChars = ["!", "@", "#", "$", "%", "^", "&", "*", ">", "<", "(", ")", "{", "}"];
 
 
-//adding a event listener on a "Get a password" button click
+//adding an event listener on a "Get a password" button click
 getPasswordButton.addEventListener("click", function () {
     //storing slider value (password length) in a variable
     var passwordLength = document.querySelector("#selectRange").value;
@@ -57,7 +57,7 @@ getPasswordButton.addEventListener("click", function () {
 
     //looping over optionSelected array
     for (var i = 0; i < passwordLength; i++) {
-        //using  math function to generate random numbers
+        //using math function to generate random numbers
         var randomValue = Math.floor(Math.random() * optionSelected.length);
         var password = password + optionSelected[randomValue];
 
@@ -69,11 +69,9 @@ getPasswordButton.addEventListener("click", function () {
 });
 
 //code for Copy to clipboard button
-
 var clipBoardButton = document.querySelector("#copyPassword");
 
-
-
+//adding an event listener on a "Copy to clipboard" button click
 clipBoardButton.addEventListener("click", function () {
 
     //storing textbox element in a variable
@@ -85,7 +83,7 @@ clipBoardButton.addEventListener("click", function () {
     //copy textbox value-password
     document.execCommand("copy");
 
-    //password value will be copied to textarea
+    //password value will be copied to text area
     document.querySelector("#password").value = copyPassword.value;
 
     //clearing the values of textbox and checkboxes
@@ -94,6 +92,7 @@ clipBoardButton.addEventListener("click", function () {
     lowerCaseCheckbox.checked = false;
     numberCheckbox.checked = false;
     specialCharCheckbox.checked = false;
+
 
 
 });
