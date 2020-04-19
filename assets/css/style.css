@@ -175,6 +175,13 @@ h5{
     margin: 16px 0px 0px 0px;
     padding: 10px 15px;
   }
+  #copyPassword,
+#getPassword {
+  width: 48%;
+  margin-left: 3px;
+  font-size: 19px;
+  padding: 5px 1px;
+}
 
   #password {
     font-size: 1rem;
