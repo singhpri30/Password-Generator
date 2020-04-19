@@ -22,8 +22,9 @@
 
     
 
-Screenshot of Modal popup:
+**Screenshot of Modal popup:**
 
+![Modal_Window](https://user-images.githubusercontent.com/60719350/79678407-412b7c80-81c9-11ea-90e4-227c9643f07f.png)
 
 
 
